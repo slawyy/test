@@ -1,0 +1,104 @@
+footer {
+      background: $color2;
+      max-width: 1400px;
+      margin: 40px auto;
+      margin-bottom: 80px;
+      height: 85vh;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      color: $color3;
+
+    form {
+      border-right: 1px solid rgba(190, 190, 190, 0.548); 
+      display: grid;
+      padding: 0 50px;
+    }
+    label {
+      font-family: $font1;
+      text-transform: uppercase;
+      font-weight: bolder;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      display: flex;
+      padding: 20px 5px;
+      align-items: flex-end;
+    }
+    input {
+      padding: 9px 20px;
+    }
+    input, textarea {
+      background: none;
+      border: 1px solid rgba(190, 190, 190, 0.548);
+      border-radius: 5px;
+    }
+    textarea {
+      padding: 100px 0;
+      resize: none;
+    }
+    .btn {
+      padding: 15px 30px;;
+      border-radius: 0px;
+      margin: 50px 0;
+      color: rgb(116, 116, 116);
+      border: 2px solid rgb(116, 116, 116);
+      transition: 0.2s ease-in-out;
+    }
+    .btn:hover {
+      background: rgba(116, 116, 116);
+      color: $color1;
+    }
+    .infos-contact div{
+      box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.082);
+      padding: 80px 60px;
+      display: flex;
+      align-items: center;  
+      font-family: $font1;
+      line-height: 30px;
+    }
+    .infos-contact p {
+      padding: 0 100px;
+      font-style: normal;
+      color: rgb(114, 114, 114);
+    }
+    .infos-contact h3 {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      font-weight: bolder;
+    }
+    .social {
+      border-bottom: none;
+      display: flex;
+    }
+    .social ul {
+      display: flex;
+      padding: 0 70px;
+      cursor: pointer;
+    }
+    .social li {
+      list-style: none;
+      padding: 0 10px ;
+    }
+    .social li i {
+      border-radius: 50%;
+      border: 1px solid rgb(196, 196, 196);
+      padding:15px;
+      color: rgb(68, 68, 68);
+      transition: 0.3s ease-in-out;
+    }
+    .social li i:hover {
+      color: $color1;
+      background: rgb(68, 68, 68);
+    }
+
+    // MEDIA QUERIES
+
+    @media screen and (max-width: 768px) {
+      input {
+        padding: 5px ;
+      }
+      textarea {
+        padding: 5px 0;
+      }
+     }
+  }

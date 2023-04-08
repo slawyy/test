@@ -1,0 +1,57 @@
+// SETTINGS REGROUPE TOUS LES REGLAGES GENERAUX
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+  }
+@font-face {
+    font-family: "font2";
+    src: url(../fonts/Merriweather-Light.ttf);
+  }
+
+$font1: "font1", sans-serif;
+$font2: "font2", sans-serif;
+$color1: rgb(255, 255, 255);
+$color2: rgb(226, 226, 226);
+$color3: rgb(95, 95, 95);
+
+// MIXINS
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background: url(../img/bg.jpg) fixed center/cover;
+}
+p {
+  font-style: italic;
+  font-family: $font2;
+}
+.btn {
+  border: 2px solid black;
+  background-color: transparent;
+  padding: 15px 45px;
+  font-weight: bolder;
+  font-family: $font1;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out;
+}
+.btn:hover {
+  color: $color1;
+  background: black;
+}
+h2 {
+  text-transform: uppercase;
+  font-family: $font1;
+  font-size: 4rem;
+  padding: 50px 0;
+  letter-spacing: 3px;
+}

@@ -1,0 +1,111 @@
+header {
+.header-content {
+  text-align: center;
+  color: $color1;
+  height: 100vh;
+  position: relative;
+  border: 1px solid transparent;
+}
+.header-content i {
+  color: $color1;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 2.8px solid rgb(212, 212, 212);
+  padding:25px 28px;
+}
+h1 {
+  max-width: 780px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: $font1;
+  font-size: 5.2rem;
+  margin-top: 250px;
+  letter-spacing: 5px;
+  font-weight: bolder;
+}
+p {
+  font-size: 1.3rem;
+  padding: 60px;  
+}
+nav {
+  width: 1400px;
+  position: absolute;
+  bottom: 0;  
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.308); 
+} 
+nav li {
+  color: $color1;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.nav-left li {
+  display: block;
+  cursor: pointer;
+  font-family: $font1;
+  font-weight: bolder; 
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  padding: 35px 20px; 
+}
+.nav-right {
+  display: flex;
+}
+.nav-right li {
+  list-style: none;
+  padding: 0 35px;
+  font-size: 1.5rem;
+  transition: 0.2s;
+}
+// HOVER EFFECT
+.nav-left li:hover:nth-child(1) {
+  color: black;
+  background-color: $color1;
+}
+.nav-left li:hover:nth-child(2) {
+  color: black;
+  background-color: $color1;
+}
+.nav-left li:hover:nth-child(3) {
+  color: black;
+  background-color: $color1;
+}
+.nav-right li:hover {
+  resize: none;
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+// MEDIA QUERIES
+@media screen and (max-width: 768px) {
+  .header-content {
+    height: 100vh;
+  }
+  h1 {
+    font-size: 2.6rem;
+    max-width: 430px;
+    text-align: center;
+}
+  p {
+    font-size: 1.2rem;
+    max-width: 520px;
+    margin: 0 auto;
+    
+  }
+  nav {
+    width: 80%;
+    text-align: center;
+  }
+  .nav-right {
+    display: none;
+  }
+}
+}
